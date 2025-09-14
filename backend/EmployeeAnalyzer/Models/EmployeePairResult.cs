@@ -1,6 +1,6 @@
 namespace EmployeeAnalyzer.Models;
 
-public class EmployeePairResult
+public record EmployeePairResult
 {
     public int Employee1Id { get; set; }
     public int Employee2Id { get; set; }
@@ -8,7 +8,7 @@ public class EmployeePairResult
     public List<ProjectCollaboration> CommonProjects { get; set; } = new();
 }
 
-public class ProjectCollaboration
+public record ProjectCollaboration
 {
     public int ProjectId { get; set; }
     public int Employee1Id { get; set; }

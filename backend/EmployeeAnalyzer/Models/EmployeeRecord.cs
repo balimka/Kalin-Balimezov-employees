@@ -1,6 +1,6 @@
 namespace EmployeeAnalyzer.Models;
 
-public class EmployeeRecord
+public record EmployeeRecord
 {
     public int EmployeeId { get; set; }
     public int ProjectId { get; set; }
